@@ -1,53 +1,185 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-header{
-background-color: #ff914d;
-height: 80px;
-display: flex;
-justify-content:space-between;
-align-items: center;
+
+header {
+    background-color: #ff914d;
+    position:fixed ;
+    height: 15vh;
+
+    width: 100vw;
+    display: flex;
+    
+    align-items: center;
+}
+
+.app-bar{
+height: 15vh;
 padding-left:20px;
 padding-right: 20px;
-font-size: 20px;
-}
-nav{
-    background-color:#ffbd59;
 }
 
+header>nav {
+    
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 200%;
+    color: #fff;
+    text-align: center;
+    font-style:solid;
+    font-family: 'Segoe UI';
+
+}
 
 
 
-main{
+
+main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    row-gap:60px;
-    column-gap: 16px;
-    margin: 12px;
-    flex-grow: 1;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+
+}
+/*esse campo foi adicionado para retirar a barra de rolagens horizontal 
+o sistema verifica se a necessidade dela aparecer.*/
+html {
+    overflow-y: scroll;
+    overflow-x:  scroll;
+    overflow-x: overlay;
+    overflow-y: overlay;
     
-   
-    
-    
+}
+/*=====================================================*/
+
+
+.imagem01 {
+    background-image: url('../img/imagem01.jpg');
+     background-color: #ff914d; 
+     background-size:100%;
+     background-position: top center; 
+     width: 100vw;
+     height: 100vh;
+  
 }
 
 
-.footer{
-    background-color:gray;
-    height: 80px;
-    display:flex;
-    
+.imagem01>.texto1 {
+    position:static ;
+    margin-top: 10%;
+    margin-left: 50%;
+    color: whitesmoke;
+    text-align: center;
+    width: 650px;
+    line-height: 130%;
+    height: 30%;
+    font-size: 200%;
+    font-family: 'Segoe UI';
+}
+
+
+/*=====================================================*/
+
+.imagem02 {
+    background-image: url('../img/imagem02.jpg');
+    background-color: #ff914d; 
+    background-size:100%;
+    background-position: top center; 
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.imagem02>.texto2 {
+    position:static ;
+    margin-top: 10%;
+    margin-left: 50%;
+    color: whitesmoke;
+    text-align: center;
+    width: 650px;
+    line-height: 130%;
+    height: 30%;
+    font-size: 200%;
+    font-family: 'Segoe UI';
+}
+
+
+.imagem03 {
+    background-image: url('../img/imagem03.jpg');
+    background-color: #ff914d; 
+    background-size:100%;
+    background-position: top center; 
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.imagem03>.texto3 {
+    position:static ;
+    margin-top: 10%;
+    margin-left: 5%;
+    color: whitesmoke;
+    text-align: center;
+    width: 650px;
+    line-height: 130%;
+    height: 30%;
+    font-size: 200%;
+    font-family: 'Segoe UI';
+}
+.imagem04 {
+    background-image: url('../img/imagem04.jpg');
+    background-color: #ff914d; 
+    background-size:100%;
+    background-position: top center; 
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.imagem04>.texto4 {
+    position:static ;
+    margin-top: 10%;
+    margin-left: 60%;
+    color: whitesmoke;
+    text-align: center;
+    width: 550px;
+    line-height: 130%;
+    height: 30%;
+    font-size: 200%;
+    font-family: 'Segoe UI';
+}
+
+/*=====================================================*/
+
+
+
+
+.footer {
+    background-color: #2f333d;
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
     align-items: center;
     font-size: 30px;
 
+
 }
-footer>p{
+
+footer>p {
     color: white;
+    font-family: Segoe UI;
+
 }
 
 a:link {
-    color: #848484;
+    color: #ffbd59;
     text-decoration: none;
 }
+
+
+/*===========quem somomos ===========*/
+
+
