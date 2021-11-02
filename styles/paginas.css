@@ -1,3 +1,4 @@
+/*fiz dois arquivos css por conta da grid da main, na hohe ela possue 3 linhas e nas demais paginas somente uma linha*/
 * {
   margin: 0;
   padding: 0;
@@ -104,8 +105,8 @@ html {
   
 }
 /*=====================================================*/
-.imagem05 {
-  background-image: url('../img/imagem05.jpg');
+.img-quem-somos {
+  background-image: url('../img/img-quem-somos.jpg');
    background-color: #ff914d; 
    background-size:100%;
    background-position: top center; 
@@ -115,7 +116,100 @@ html {
 }
 
 
-.imagem01>.texto5 {
+.img-quem-somos>.texto-quem-somos {
+  position:static ;
+  margin-top: 2vh;
+margin-left: 2vw;
+  color: whitesmoke;
+  text-align: justify;
+  width: 45vw;
+  line-height: 4vh;
+  height: 20vh;
+  font-size: 170%;
+
+}
+
+.img-contato {
+  background-image: url('../img/img-contato.jpg');
+   background-color: #ff914d; 
+   background-size:100%;
+   background-position: top center; 
+   width: 100vw;
+   height: 100vh;
+
+}
+
+
+.img-contato>.texto-contato {
+  position:static ;
+  margin-top: 2vh;
+  margin-left: 55vw;
+    color: whitesmoke;
+    text-align: justify;
+    width: 30vw;
+    line-height: 5vh;
+    height: 20vh;
+    font-size: 100%;
+
+}
+.img-cartao {
+  background-image: url('../img/img-cartao.jpg');
+   background-color: #ff914d; 
+   background-size:100%;
+   background-position: top center; 
+   width: 100vw;
+   height: 100vh;
+
+}
+
+
+.img-cartao>.texto-cartao {
+  position:static ;
+  margin-top: 10%;
+  margin-left: 50%;
+  color: #ff914d; 
+  text-align: center;
+  width: 650px;
+  line-height: 130%;
+  height: 30%;
+  font-size: 200%;
+
+}
+.img-banco-conta {
+  background-image: url('../img/img-banco-conta.jpg');
+   background-color: #ff914d; 
+   background-size:100%;
+   background-position: top center; 
+   width: 100vw;
+   height: 100vh;
+
+}
+
+
+.img-banco-conta>.texto-banco-conta {
+  position:static ;
+  margin-top: 2vh;
+  margin-left: 4vw;
+    color: whitesmoke;
+    text-align: justify;
+    width: 45vw;
+    line-height: 5vh;
+    height: 20vh;
+    font-size: 200%;
+
+}
+.img-investimento {
+  background-image: url('../img/img-investimento.jpg');
+   background-color: #ff914d; 
+   background-size:100%;
+   background-position: top center; 
+   width: 100vw;
+   height: 100vh;
+
+}
+
+
+.img-investimento>.texto-investimento {
   position:static ;
   margin-top: 10%;
   margin-left: 50%;
