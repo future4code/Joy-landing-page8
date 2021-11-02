@@ -1,10 +1,15 @@
+/*fiz dois arquivos css por conta da grid da main, na hohe ela possue 3 linhas e nas demais paginas somente uma linha*/
+/* returar as parguen to site  */
 * {
   margin: 0;
   padding: 0;
 }
+/*  defini uma tipo de fonte para todo site */
 body{
   font-family: 'Segoe UI';
 }
+
+/*  defino o menu sustenso para ele ficar visivel quando rolar a pagina */
 header {
   background-color: #ff914d;
   position:fixed ;
@@ -22,7 +27,7 @@ overflow: hidden;
 background-color: #ff914d;
 
 }
-
+/*  configuraçoes do menu suspenso e colorido */
 .navbar a {
 float: left;
 font-size: 150%;
@@ -111,7 +116,8 @@ html {
 }
 /*=====================================================*/
 
-
+/* configuraçoes da imagem 1 e do texto ao lado da imagem 1 da home ,  joguei a imagem como backgrund para colocar um texto por cima
+tentei usar position absolute, mas quando rolava a pagina ele ficava em cima do menu, que tbm e position fixed */
 .imagem01 {
     background-image: url('../img/imagem01.jpg');
      background-color: #ff914d; 
@@ -133,35 +139,35 @@ html {
     line-height: 130%;
     height: 30%;
     font-size: 200%;
-    font-family: 'Segoe UI';
+   
 }
 
-
+/* configuraçoes da imagem 2 e do texto ao lado da imagem 2 da home  */
 /*=====================================================*/
-
 .imagem02 {
-    background-image: url('../img/imagem02.jpg');
-    background-color: #ff914d; 
-    background-size:100%;
-    background-position: top center; 
-    width: 100vw;
-    height: 100vh;
+  background-image: url('../img/imagem02.jpg');
+  background-color: #ff914d; 
+  background-size:100%;
+  background-position: top center; 
+  width: 100vw;
+  height: 100vh;
 }
 
 
 .imagem02>.texto2 {
-    position:static ;
-    margin-top: 10%;
-    margin-left: 50%;
-    color: whitesmoke;
-    text-align: center;
-    width: 650px;
-    line-height: 130%;
-    height: 30%;
-    font-size: 200%;
-    font-family: 'Segoe UI';
+position:static ;
+margin-top: 2vh;
+margin-left: 2vw;
+color: whitesmoke;
+text-align: center;
+width: 45vw;
+line-height: 7vh;
+height: 20vh;
+font-size: 180%;
+
 }
 
+/* configuraçoes da imagem 3 e do texto ao lado da imagem 3 da home  */
 
 .imagem03 {
     background-image: url('../img/imagem03.jpg');
@@ -175,16 +181,19 @@ html {
 
 .imagem03>.texto3 {
     position:static ;
-    margin-top: 10%;
-    margin-left: 5%;
+    margin-top: 10vh;
+    margin-left: 50vw;
     color: whitesmoke;
     text-align: center;
-    width: 650px;
-    line-height: 130%;
-    height: 30%;
-    font-size: 200%;
-    font-family: 'Segoe UI';
+    width: 40vw;
+    line-height: 7vh;
+    height: 6vh;
+    font-size: 180%;
+ 
 }
+
+
+/* configuraçoes da imagem 4 e do texto ao lado da imagem 4 da home  */
 .imagem04 {
     background-image: url('../img/imagem04.jpg');
     background-color: #ff914d; 
@@ -196,20 +205,21 @@ html {
 
 
 .imagem04>.texto4 {
-    position:static ;
-    margin-top: 10%;
-    margin-left: 60%;
-    color: whitesmoke;
-    text-align: center;
-    width: 550px;
-    line-height: 130%;
-    height: 30%;
-    font-size: 200%;
-    font-family: 'Segoe UI';
+  position:static ;
+  margin-top: 20vh;
+  margin-left: 5vw;
+  color: whitesmoke;
+  text-align: center;
+  width: 40vw;
+  line-height: 10vh;
+  height: 10vh;
+  font-size: 200%;
+  
 }
 
 /*=====================================================*/
 /*seção de configuração do footer*/
+/*usei displey para alinhas os icones space evenly deu um espaço entre os icones */
 .footer {
   background-color: #2f333d;
   height: 30vh;
@@ -218,6 +228,9 @@ html {
   font-size:large;  
   justify-content: space-evenly;
 }
+
+
+/*usei displey para alinhas os  listas */
 .menu-footer,.serviços{
 display: flex;
 align-items: center;
@@ -228,9 +241,11 @@ margin-left: 1%;
 li{
 list-style-type: none;
 }
+/*cor no titulo do menu*/
 ul>h3{
 color:#ff914d;
 }
+
 .icones>p {
 font-size: 120%;
   color: white;
@@ -242,6 +257,7 @@ font-size: 120%;
 margin-bottom: 1vh;
 margin-left: 1vh;
 }
+/*configuracao das cores dos hiperlinks para acessar outras paginas*/
 a:link {
   color: white;
   text-decoration: none;
