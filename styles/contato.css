@@ -2,36 +2,91 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    font-family: 'Segoe UI';
+}
 header {
     background-color: #ff914d;
     position:fixed ;
-    height: 15vh;
-
+    height: 12vh;
     width: 100vw;
     display: flex;
-    
+      justify-content: space-around;
     align-items: center;
 }
 
+
+/*cor do botao no menu*/
+.navbar {
+  overflow: hidden;
+  background-color: #ff914d;
+  
+}
+
+.navbar a {
+  float: left;
+  font-size: 150%;
+ 
+font-style:solid;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 150%;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:#ffbd59;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ff914d;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ffbd59;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 .app-bar{
-height: 15vh;
+height: 12vh;
 padding-left:20px;
 padding-right: 20px;
 }
 
-header>nav {
-    
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 200%;
-    color: #fff;
-    text-align: center;
-    font-style:solid;
-    font-family: 'Segoe UI';
 
-}
 
 
 
@@ -76,132 +131,52 @@ html {
     line-height: 130%;
     height: 30%;
     font-size: 200%;
-    font-family: 'Segoe UI';
-}
-
-
-/*=====================================================*/
-
-.imagem02 {
-    background-image: url('../img/imagem02.jpg');
-    background-color: #333; 
-    background-size:100%;
-    background-position: top center; 
-    width: 100vw;
-    height: 100vh;
-}
-
-
-.imagem02>.texto2 {
-    position:static ;
-    margin-top: 10%;
-    margin-left: 50%;
-    color: whitesmoke;
-    text-align: center;
-    width: 650px;
-    line-height: 130%;
-    height: 30%;
-    font-size: 200%;
-    font-family: 'Segoe UI';
-}
-
-
-.imagem03 {
-    background-image: url('../img/imagem03.jpg');
-    background-color: #333; 
-    background-size:100%;
-    background-position: top center; 
-    width: 100vw;
-    height: 100vh;
-}
-
-
-.imagem03>.texto3 {
-    position:static ;
-    margin-top: 10%;
-    margin-left: 5%;
-    color: whitesmoke;
-    text-align: center;
-    width: 650px;
-    line-height: 130%;
-    height: 30%;
-    font-size: 200%;
-    font-family: 'Segoe UI';
-}
-.imagem04 {
-    background-image: url('../img/imagem04.jpg');
-    background-color: #333; 
-    background-size:100%;
-    background-position: top center; 
-    width: 100vw;
-    height: 100vh;
-}
-
-
-.imagem04>.texto4 {
-    position:static ;
-    margin-top: 10%;
-    margin-left: 60%;
-    color: whitesmoke;
-    text-align: center;
-    width: 550px;
-    line-height: 130%;
-    height: 30%;
-    font-size: 200%;
-    font-family: 'Segoe UI';
+  
 }
 
 /*=====================================================*/
-
-
-
-
+/*seção de configuração do footer*/
 .footer {
     background-color: #2f333d;
-    height: 20vh;
+    height: 30vh;
     width: 100vw;
     display: flex;
-    align-items: center;
-    align-items: center;
-    font-size: 30px;
-
-
+    font-size:large;  
+    justify-content: space-evenly;
 }
-
-footer>p {
+.menu-footer,.serviços{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1%;
+}
+/*retirar pontos da lista nao ordenada*/
+li{
+  list-style-type: none;
+}
+ul>h3{
+color:#ff914d;
+}
+.icones>p {
+  font-size: 120%;
     color: white;
-    font-family: Segoe UI;
-
+    align-items: center;
+    text-align: center;
+    margin: 10%;   
 }
-
+.icones>a{
+  margin-bottom: 1vh;
+  margin-left: 1vh;
+}
 a:link {
-    color: #ffbd59;
+    color: white;
     text-decoration: none;
 }
-
-
-/*===========quem somomos ===========*/
-
-
-.imagem05 {
-    background-image: url('../img/imagem05.jpg');
-    background-color: #333; 
-    background-size:100%;
-    background-position: top center; 
-    width: 100vw;
-    height: 100vh;
+a:visited {
+  color: white;
+    text-decoration: none;
 }
-
-
-.imagem05>.texto5 {
-    position:static ;
-    margin-top: 2%;
-    margin-left: 5%;
-    color: whitesmoke;
-    text-align: center;
-    width: 600px;
-    line-height: 130%;
-    height: 0%;
-    font-size: 150%;
-    font-family: 'Segoe UI';
+a:active {
+    color: #ff914d;
+    text-decoration: none;
 }
