@@ -268,7 +268,8 @@ a:active {
   color: #ff914d;
   text-decoration: none;
 }
-
+ 
+/* configuracao de responsovodade para telas com 1280x1024 e 1280x720 */
 
 @media screen and (max-device-width:1280px) {
   /* telas em 1280px */
@@ -295,6 +296,7 @@ a:active {
   main{
     background-color:#ff914d;
   }
+  /* configuracao de redimencionamento das imagens do background */
   .img-quem-somos {
     background-image: url('../img/img-quem-somos.jpg');
      background-color: #ff914d; 
@@ -381,9 +383,9 @@ a:active {
 
 
 }
-
+/* configuracao de responsovodade para telas iphone 6 , 7 e 8 */
 @media screen and (max-device-width : 677px) and (max-device-width:375px) {
-  /* celulares */
+  
   * {
     margin: 0;
     padding: 0;
@@ -397,10 +399,20 @@ a:active {
     height: 12vh;
     width: 100vw;
     display: flex;
-      justify-content: space-around;
+   font-size: 90%; 
     align-items: center;
   }
-  
+
+  /*tive que desaparecer com a logo, pois nao cabia junto com o menu, vi que o menu para movile sua java script*/
+  header>img{
+    width: 20%;
+    height: 40%;
+  display: none;
+   
+  }
+  .navbar>a{
+    padding: none;
+  }
   
   /*cor do botao no menu*/
   .navbar {
@@ -408,10 +420,10 @@ a:active {
   background-color: #ff914d;
   
   }
-  
+  /*  configuraçoes do menu suspenso e colorido */
   .navbar a {
   float: left;
-  font-size: 150%;
+  font-size: 90%;
   
   font-style:solid;
   color: white;
@@ -426,7 +438,7 @@ a:active {
   }
   
   .dropdown .dropbtn {
-    font-size: 150%;
+    font-size: 90%;
   border: none;
   outline: none;
   color: white;
@@ -445,7 +457,7 @@ a:active {
   display: none;
   position: absolute;
   background-color: #ff914d;
-  min-width: 160px;
+  min-width: 90%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   }
@@ -468,8 +480,7 @@ a:active {
   }
   .app-bar{
   height: 12vh;
-  padding-left:20px;
-  padding-right: 20px;
+  
   }
   
   
@@ -492,169 +503,166 @@ a:active {
   /*=====================================================*/
   .img-quem-somos {
     background-image: url('../img/img-quem-somos.jpg');
-     background-color: #ff914d; 
-     background-size:100%;
-     background-position: top center; 
-     width: 100vw;
-     height: 100vh;
-  
+    background-size:200vw;
+    background-repeat: no-repeat;
+  background-color: #ffbc3c;
+  background-position-y: 220%;
+  background-position-x: 80%;
   }
   
   
   .img-quem-somos>.texto-quem-somos {
     position:static ;
     margin-top: 2vh;
-  margin-left: 2vw;
+  margin-left: 4vw;
     color: whitesmoke;
-    text-align: justify;
-    width: 45vw;
-    line-height: 4vh;
-    height: 20vh;
-    font-size: 170%;
+    text-align: left;
+    width: 90vw;
+    line-height: 3vh;
+    height: 2vh;
+    font-size: 100%;
   
   }
   
   .img-contato {
     background-image: url('../img/img-contato.jpg');
-     background-color: #ff914d; 
-     background-size:100%;
-     background-position: top center; 
-     width: 100vw;
-     height: 100vh;
+    background-size:200vw;
+    background-repeat: no-repeat;
+  background-color: #504c5c;
   
+  background-position-y: 220%;
+  background-position-x: 10%;
   }
   
   
   .img-contato>.texto-contato {
     position:static ;
     margin-top: 2vh;
-    margin-left: 55vw;
+    margin-left: 3vw;
       color: whitesmoke;
-      text-align: justify;
-      width: 30vw;
-      line-height: 5vh;
+      text-align: center;
+      width: 90vw;
+      line-height: 3vh;
       height: 20vh;
       font-size: 100%;
   
   }
   .img-cartao {
     background-image: url('../img/img-cartao.jpg');
-     background-color: #ff914d; 
-     background-size:100%;
-     background-position: top center; 
-     width: 100vw;
-     height: 100vh;
-  
+    background-size:200vw;
+    background-repeat: no-repeat;
+  background-color: white;
+  background-position-y:13vh;
+ 
   }
   
   
   .img-cartao>.texto-cartao {
     position:static ;
-    margin-top: 10vh;
-    margin-left: 52vw;
+    margin-top: 5vh;
+    margin-left: 50vw;
     color: #ff914d; 
     text-align: center;
-    width: 40vw;
-    line-height: 5vh;
-    height: 20vh;
-    font-size: 200%;
+    width: 45vw;
+    line-height: 3vh;
+    height: 2vh;
+    font-size: 120%;
   
   }
   .img-banco-conta {
     background-image: url('../img/img-banco-conta.jpg');
-     background-color: #ff914d; 
-     background-size:107%;
-     background-position:  center; 
-     width: 100vw;
-     height: 100vh;
-  
+    background-size:200vw;
+    background-repeat: no-repeat;
+  background-color: #ff5c0c;
+  background-position-y:90%;
   }
   
   
   .img-banco-conta>.texto-banco-conta {
     position:static ;
-    margin-top: 3vh;
-    margin-left: 16vw;
+    margin-top: 2vh;
+    margin-left: 14vw;
       color: white;
       text-align:left;
-      width: 40vw;
-      line-height: 7vh;
-      height: 20vh;
-      font-size: 200%;
+      width: 60vw;
+      line-height: 4vh;
+      height: 4vh;
+      font-size: 120%;
   
   }
   .img-investimento {
     background-image: url('../img/img-investimento.jpg');
-     background-color: #ff914d; 
-     background-size:255vh;
-     background-position:  center; 
-     width: 100vw;
-     height: 100vh;
+     background-color: #f7f7f7; 
+     
+     background-size:200vw;
+     background-repeat: no-repeat;
+     background-position-y:5vh;
+     
+     
+    
   
   }
   
   
-  .img-investimento>.texto-investimento {
-    position:static ;
-    margin-top: 10%;
-    margin-left: 50%;
-    color: whitesmoke;
-    text-align: center;
-    width: 650px;
-    line-height: 130%;
-    height: 30%;
-    font-size: 200%;
-  
-  }
+
   
   /*=====================================================*/
   /*seção de configuração do footer*/
-  .footer {
-    background-color: chartreuse;
-    /*background-color: #2f333d;*/
-    height: 30vh;
-    width: 100vw;
-    display: flex;
-    font-size:large;  
-    justify-content: space-evenly;
-  }
-  .menu-footer,.serviços{
+.footer {
+  background-color: #2f333d;
+  height: 30vh;
+  width: 100vw;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 1%;
-  }
-  /*retirar pontos da lista nao ordenada*/
-  li{
-  list-style-type: none;
-  }
-  ul>h3{
-  color:#ff914d;
-  }
-  .icones>p {
-  font-size: 120%;
-    color: white;
-    align-items: center;
-    text-align: center;
-    margin: 10%;   
-  }
-  .icones>a{
-  margin-bottom: 1vh;
-  margin-left: 1vh;
-  }
-  a:link {
-    color: white;
-    text-decoration: none;
-  }
-  a:visited {
-  color: white;
-    text-decoration: none;
-  }
-  a:active {
-    color: #ff914d;
-    text-decoration: none;
-  }
+  font-size:100%;  
+  
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 20vh;
+}
 
+
+/*usei displey para alinhas os  listas */
+.menu-footer,.serviços{
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+/*retirar pontos da lista nao ordenada*/
+li{
+list-style-type: none;
+}
+/*cor no titulo do menu*/
+ul>h3{
+color:#ff914d;
+}
+
+.icones>p {
+font-size: 120%;
+  color: white;
+  align-items: center;
+  text-align: center;
+  margin: 10%;   
+}
+.icones>a{
+
+  margin-left: 12vw;
+      margin-right: -1vw;
+}
+
+/*configuracao das cores dos hiperlinks para acessar outras paginas*/
+a:link {
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+color: white;
+  text-decoration: none;
+}
+a:active {
+  color: #ff914d;
+  text-decoration: none;
+}
 
 }
 
