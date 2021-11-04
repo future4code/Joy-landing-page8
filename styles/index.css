@@ -131,13 +131,13 @@ tentei usar position absolute, mas quando rolava a pagina ele ficava em cima do 
 
 .imagem01>.texto1 {
     position:static ;
-    margin-top: 10%;
-    margin-left: 50%;
+    margin-top: 8vh;
+    margin-left: 50vw;
     color: whitesmoke;
     text-align: center;
-    width: 650px;
-    line-height: 130%;
-    height: 30%;
+    width: 45vw;
+    line-height: 6vh;
+    height: 20vh;
     font-size: 200%;
    
 }
@@ -172,8 +172,8 @@ font-size: 180%;
 .imagem03 {
     background-image: url('../img/imagem03.jpg');
     background-color: #ff914d; 
-    background-size:100%;
-    background-position: top center; 
+    background-size:110%;
+    background-position: center; 
     width: 100vw;
     height: 100vh;
 }
@@ -270,3 +270,113 @@ a:active {
   color: #ff914d;
   text-decoration: none;
 }
+
+
+
+ 
+
+@media screen and (max-device-width:1280px) {
+  /* telas em 1280px */
+  body{
+    font-family: 'Segoe UI';
+  }
+  header {
+    background-color: #ff914d;
+    position:fixed ;
+    height: 12vh;
+    width: 100vw;
+    display: flex;
+      justify-content: space-around;
+    align-items: center;
+  }
+  .footer {
+    background-color: #2f333d;
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    font-size:large;  
+    justify-content: space-evenly;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.imagem01 {
+  background-image: url('../img/imagem01.jpg');
+   background-color: #ff914d; 
+   background-size:180vh;
+   background-position:  center; 
+   width: 100vw;
+   height: 100vh;
+}
+.imagem02 {
+  background-image: url('../img/imagem02.jpg');
+  background-color: #ff914d; 
+  background-size:180vh;
+  background-position:  center; 
+  width: 100vw;
+  height: 100vh;
+}
+.imagem03 {
+  background-image: url('../img/imagem03.jpg');
+  background-color: #ff914d; 
+  background-size:190vh;
+  background-position:  center; 
+  width: 100vw;
+  height: 100vh;
+}
+.imagem04 {
+  background-image: url('../img/imagem04.jpg');
+  background-color: #ff914d; 
+  background-size:180vh;
+  background-position:  center; 
+  width: 100vw;
+  height: 100vh;
+}
+a:link {
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+color: white;
+  text-decoration: none;
+}
+a:active {
+  color: #ff914d;
+  text-decoration: none;
+}
+}
+
+
+
+
+@media screen and (max-device-width : 736) and (min-device-width : 370px) {
+  /* celulares */
+body{
+  font-family: 'Segoe UI';
+}
+header {
+  background-color: #4d85ff;
+  position:fixed ;
+  height: 12vh;
+  width: 100vw;
+  display: flex;
+    justify-content: space-around;
+  align-items: center;
+}
+.footer {
+  background-color: #2f333d;
+  height: 30vh;
+  width: 100vw;
+  display: flex;
+  font-size:large;  
+  justify-content: space-evenly;
+}
+main{
+  background-color:royalblue;
+}
+
+}
+
+
