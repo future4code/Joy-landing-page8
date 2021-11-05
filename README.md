@@ -1,4 +1,4 @@
-# Projeto F4 Banck
+# Projeto F4 Banck - landing-page
 
 ## Acesse: https://f4banck-project.surge.sh/
 
@@ -8,4 +8,4 @@ Projeto F4 Bank
 
 # Por gentileza, avaliar os dois links acima. 
 
-### landing-page
+
